@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20160822074625) do
 
-  create_table "servers", force: :cascade do |t|
+  create_table "servers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", comment: "MySQL Foreign Servers table" do |t|
     t.string   "name"
     t.string   "ip_address"
     t.datetime "created_at", null: false

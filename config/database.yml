@@ -9,7 +9,7 @@ default: &default
 
 development:
   <<: *default
-  database: appname_development
+  database: test_app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -39,6 +39,6 @@ test:
 #
 production:
   <<: *default
-  database: appname_production
+  database: test_app_production
   username: app_test
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
