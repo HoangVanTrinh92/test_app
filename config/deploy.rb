@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 # lock '3.4.0'
-server '159.203.102.72', roles: [:web, :app, :db], primary: true
+server '159.203.102.72', port: 80, roles: [:web, :app, :db], primary: true
 
 
 set :application, 'test_app'
